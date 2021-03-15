@@ -11,7 +11,11 @@
     "google-translate-api": "2.3.0",
     "r2": "^2.0.1",
     "sequelize": "^4.42.0",
-    "sqlite3": "^4.0.6"
+    "sqlite3": "^4.0.6",
+    "moment": "^2.29.1"
+  },
+   "repository": {
+    "url": "https://github.com/sparkandflash/aurabot"
   },
   "devDependencies": {},
   "scripts": {
