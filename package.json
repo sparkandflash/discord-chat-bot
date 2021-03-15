@@ -1,0 +1,23 @@
+{
+  "name": "atrovia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "querystring": "^0.2.1",
+    "google-translate-api": "2.3.0",
+    "r2": "^2.0.1",
+    "sequelize": "^4.42.0",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
