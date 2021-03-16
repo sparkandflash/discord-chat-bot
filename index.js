@@ -107,8 +107,10 @@ if(msg.content.startsWith(prefix + "ds")){
         var member = msg.member;
         let role = msg.guild.roles.find(r => r.id === "818503424772669511");
     
-        member.addRole(role).catch(console.error);
-
+       try{
+        await  member.addRole(role);
+    }catch(error) {console.error(error);
+        msg.reply('There was an error trying to execute that command!');}
     }
     //other commands
  if (!msg.content.startsWith(prefix))
