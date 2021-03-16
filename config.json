@@ -8,6 +8,6 @@
     "url": "http://api.brainshop.ai/get",
     "bid": "155049",
     "key": "E2QoMkghUKZCtCz3",
-    "uid": ""
+    "uid": "msg.author.id"
 }
 }
