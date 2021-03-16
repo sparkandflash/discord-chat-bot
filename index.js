@@ -110,7 +110,7 @@ if(msg.content.startsWith(prefix + "ds")){
        try{
         await  member.addRole(role);
     }catch(error) {console.error(error);
-        msg.reply('There was an error trying to execute that command!');}
+        msg.reply('error! DM an Owner or Admin if you did not get verified!');}
     }
     //other commands
  if (!msg.content.startsWith(prefix))
