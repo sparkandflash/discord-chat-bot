@@ -100,18 +100,18 @@ if(msg.content.startsWith(prefix + "ds")){
 
     //-- end
     //verify command
-   // if(msg.content.startsWith("!verify"))
-  //  {
- //       var verchannel = msg.channel.id == "818503424844628015";
- //       if(!verchannel) return;
- //       var member = msg.member;
-  //      let role = msg.guild.roles.find(r => r.id === "818503424772669511");
-    
-  //     try{
-  //      await  member.addRole(role);
-//    }catch(error) {console.error(error);
- //       msg.reply('error! DM an Owner or Admin if you did not get verified!');}
- //   }
+    if(msg.content.startsWith("!verify"))
+    {
+        let verchannel = msg.channel.id == "818503424844628015";
+        if(!verchannel||msg.author.bot) return;
+        let member = msg.member;
+        let role = msg.guild.roles.find(r => r.id === "818503424772669511");
+    try{
+        await  member.addRoles([role]);
+    }catch(error) {console.error(error);
+        msg.reply('error! please type `-role verify` if you did not get the role');}
+        msg.delete();
+    }
     //other commands
  if (!msg.content.startsWith(prefix))
  {return;}
