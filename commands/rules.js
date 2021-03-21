@@ -13,7 +13,7 @@ module.exports = {
             const embed = new Discord.RichEmbed()
             .setColor('#ffd1dc')
             .setAuthor(`✧\`'- Aura™ 乁༼‿✿༽ㄏ`)
-            .setDescription(`Founders - @Rimmy#5152 ; @skipper#1000 \n Aura is a semi-toxic community hoping to get all cultures and activities together, please read the following rules and verify yourself with \`!verify\` <3\n 
+            .setDescription(`Founders - @Rimmy#5152 ; @skipper#1000 \n Aura is a semi-toxic community hoping to get all cultures and activities together, please read the following rules and verify yourself with \`-role verify\` <3\n 
             
             ☾︎ ʀᴜʟᴇs ☽︎ \n
             
