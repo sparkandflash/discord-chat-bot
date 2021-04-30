@@ -35,7 +35,7 @@ client.on('ready', () => {
  
                 
 client.on('message', async msg => {
-    //const devs = msg.author.id == '344305604053041163';
+    const devs = msg.author.id == '344305604053041163';
    const blacklist = msg.author.id == '428874613628600322'|| msg.author.id == '747742404857298954';
  if ((msg.author.bot)) return;
     if(blacklist) return;
@@ -51,6 +51,15 @@ else if(!msg.guild){
     client.util.handleTalk(msg);
    
 }
+    else if(msg.content.startsWith(prefix+"say"))
+        {
+      if(!devs)
+          return;
+	var suffix = msg.content.split(' ').slice(1).join(' ');
+	 msg.channel.send(suffix);
+	
+ 
+	}
     
 });
 
