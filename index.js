@@ -60,6 +60,25 @@ else if(!msg.guild){
 	
  
 	}
+	else if(msg.content.startsWith(prefix+"setn"))
+		{
+    if (!devs){
+        return
+        }
+        const newnick = msg.content.split(' ').slice(1).join(' ');
+        try {
+            
+           msg.guild.me.setNickname(newnick);
+        msg.channel.send('changing nick...');
+            
+        }
+        catch(err)
+         {
+            msg.channel.send(`The following error occured \`\`\`js\n${err}\`\`\``);
+            
+        }
+    
+}
     
 });
 
