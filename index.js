@@ -41,7 +41,7 @@ client.on('message', async msg => {
     if(blacklist) return;
 //mod-mail
 //chatbot 
-    if (msg.content.startsWith(`<@${msg.client.user.id}>`) || msg.content.startsWith(`<@!${msg.client.user.id}>`)|| msg.content.includes(`aliz`) ) {
+    if (msg.content.startsWith(`<@${msg.client.user.id}>`) || msg.content.startsWith(`<@!${msg.client.user.id}>`)|| msg.content.includes(`kowalski`) ) {
         client.util.handleTalk(msg);
     }
 //chat bot end
