@@ -35,7 +35,7 @@ client.on('ready', () => {
  
                 
 client.on('message', async msg => {
-    const devs = msg.author.id == '344305604053041163'|| msg.author.id == '156162196806696961'|| msg.author.id == '208957138289033217';
+    const devs = msg.author.id == '344305604053041163'|| msg.author.id == '732303513924927550'|| msg.author.id == '544067187795558420';
    const blacklist = msg.author.id == '428874613628600322'|| msg.author.id == '747742404857298954';
  if ((msg.author.bot)) return;
     if(blacklist) return;
