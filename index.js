@@ -63,7 +63,8 @@ else if(!msg.guild){
 		 {
    
     var usertokiss = msg.mentions.users.first();
-    msg.channel.send(`${msg.author} kisses ${usertokiss}\n https://cdn.discordapp.com/attachments/814551742754324512/814581759857524776/unknown.gif`);
+    msg.channel.send(`${msg.author} kisses ${usertokiss} `);
+    msg.channel.send(`https://cdn.discordapp.com/attachments/814551742754324512/814581759857524776/unknown.gif`);
 
     
 }
