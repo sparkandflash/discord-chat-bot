@@ -24,11 +24,9 @@ const handleTalk = async (msg) => {
         let reply = await request(options);
         msg.channel.stopTyping(true);
         if (reply) {
-           if(!msg.guild){ await msg.channel.send(reply.cnt);}
-            else
-          { 
-               await msg.channel.send(`<@${msg.author.id}> ${reply.cnt}`);
-       }
+       
+           await msg.channel.send(`<@${msg.author.id}> `);
+               await msg.channel.send(reply.cnt || `chat bot API down` );
 
         }
     } catch (e) {
