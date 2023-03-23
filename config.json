@@ -1,13 +1,13 @@
 {
 
 	"prefix": "a!",
-    "token": "NzQ3NzQyNDA0ODU3Mjk4OTU0.YBVBZA.v1xtNPaBgqxsfc22G5fawdxlduY",
+    "token": "[discord token]",
     "ownerID":"",
 
 "chat": {
     "url": "http://api.brainshop.ai/get",
-    "bid": "155049",
-    "key": "E2QoMkghUKZCtCz3",
+    "bid": "BID",
+    "key": "KEY",
     "uid": "msg.author.id"
 }
 }
