@@ -35,8 +35,8 @@ client.on('ready', () => {
  
                 
 client.on('message', async msg => {
-    const devs = msg.author.id == '344305604053041163'|| msg.author.id == '732303513924927550'|| msg.author.id == '544067187795558420';
-   const blacklist = msg.author.id == '428874613628600322'|| msg.author.id == '747742404857298954';
+    const devs = msg.author.id == 'DEV_user_id';
+   const blacklist = msg.author.id == 'BLACKLIST_USER_ID';
  if ((msg.author.bot)) return;
     if(blacklist) return;
 //mod-mail
@@ -64,7 +64,7 @@ else if(!msg.guild){
    
     var usertokiss = msg.mentions.users.first();
     msg.channel.send(`${msg.author} kisses ${usertokiss} `);
-    msg.channel.send(`https://cdn.discordapp.com/attachments/814551742754324512/814581759857524776/unknown.gif`);
+    msg.channel.send(`KISS_GIF_LINK`);
 
     
 }
